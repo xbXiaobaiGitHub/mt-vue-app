@@ -17,7 +17,7 @@ const routes = [
     component: defaultPage,
     // 首页嵌套goodsList子路由
     // 设置重定向 默认页面初始化展示goodsList
-    // redirect: '/index',
+    redirect: '/index',
     children: [{
       path: 's/:name', // 访问路径为 http://127.0.0.1:8080/s/name 同时方便前端页面获取该路由参数名
       name: 'goods',
